@@ -1,0 +1,1190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sharma Computer and Typing Institute</title>
+    <meta name="description" content="Sharma Computer and Typing Institute - practical computer courses, typing training, and career-ready skills in Near Bus Stand, Nabinagar Road, Amba.">
+    <meta property="og:title" content="Sharma Computer & Typing Institute">
+    <meta property="og:description" content="Practical computer courses, typing training, and career-ready skills in Amba.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/scti-logo.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sharma Computer & Typing Institute">
+    <meta name="twitter:description" content="Practical computer courses, typing training, and career-ready skills in Amba.">
+    <meta name="twitter:image" content="./assets/scti-logo.jpeg">
+    <link rel="icon" sizes="180x180" href="./assets/SCTI_LOGO_FAVICON.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --ink: #1b1425;
+            --paper: #fff7f0;
+            --accent: #ff5a3c;
+            --accent-2: #1f8a70;
+            --deep: #2b1f4a;
+            --glow: #ffd166;
+            --card: rgba(255, 255, 255, 0.92);
+            --line: rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+            color: var(--ink);
+            background:
+                radial-gradient(900px 420px at 8% -10%, #ffe1c7 0%, transparent 60%),
+                radial-gradient(700px 360px at 92% 8%, #dff4ff 0%, transparent 60%),
+                linear-gradient(140deg, #fff6ec, #eef6ff 55%, #f4ecff);
+            min-height: 100vh;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1200px, 92vw);
+            margin: 0 auto;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.86);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 0;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand img {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+        }
+
+        .brand h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 20px;
+            letter-spacing: 1px;
+            color: var(--deep);
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 600;
+            color: var(--deep);
+            transition: all 0.2s ease;
+        }
+
+        nav a:hover {
+            background: var(--deep);
+            color: white;
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .nav-actions a {
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 700;
+            border: 1px solid var(--line);
+            background: white;
+            color: var(--deep);
+            transition: all 0.2s ease;
+        }
+
+        .nav-actions a:hover {
+            background: var(--deep);
+            color: white;
+        }
+
+        .hero {
+            position: relative;
+            padding: 64px 0 40px;
+            background:
+                linear-gradient(120deg, rgba(255, 255, 255, 0.95), rgba(255, 240, 230, 0.8)),
+                url('./assets/sitebcg.png') center/cover no-repeat;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero h2 {
+            font-size: clamp(28px, 4vw, 44px);
+            color: var(--deep);
+        }
+
+        .hero p {
+            margin-top: 16px;
+            font-size: clamp(16px, 1.6vw, 20px);
+            color: #2b2b2b;
+        }
+
+        .hero-cta {
+            margin-top: 24px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn.primary {
+            background: linear-gradient(135deg, #ff6b4a, #ff3b2f);
+            color: white;
+            box-shadow: 0 12px 30px rgba(255, 77, 46, 0.35);
+        }
+
+        .btn.secondary {
+            background: white;
+            border: 2px solid var(--deep);
+            color: var(--deep);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .hero-card {
+            background: var(--card);
+            border-radius: 24px;
+            padding: 26px;
+            box-shadow: 0 22px 45px rgba(26, 20, 45, 0.15);
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+        }
+
+        .hero-card::after {
+            content: "";
+            position: absolute;
+            inset: 12px;
+            border-radius: 20px;
+            border: 1px dashed rgba(0, 0, 0, 0.15);
+            pointer-events: none;
+        }
+
+        .highlight {
+            background: linear-gradient(90deg, #ffe4cf, #ffd1e3);
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-weight: 600;
+            border: 1px dashed rgba(0, 0, 0, 0.15);
+        }
+
+        .moving-text {
+            margin-top: 16px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .moving-text span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: move-text 12s linear infinite;
+        }
+
+        @keyframes move-text {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        section {
+            padding: 56px 0;
+        }
+
+        .section-title {
+            font-size: 28px;
+            color: var(--deep);
+            margin-bottom: 18px;
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 18px;
+            padding: 18px;
+            box-shadow: 0 14px 26px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--line);
+        }
+
+        .card h3 {
+            margin-bottom: 8px;
+            color: var(--deep);
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .course-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 18px;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 999px;
+            background: var(--deep);
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+        }
+
+        .testimonial {
+            background: white;
+            border-radius: 18px;
+            padding: 18px;
+            border-left: 5px solid var(--accent-2);
+            box-shadow: 0 10px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        .faq {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .faq details {
+            background: white;
+            border-radius: 14px;
+            padding: 14px;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .gallery-grid figure {
+            margin: 0;
+            display: grid;
+            gap: 6px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            -webkit-user-drag: none;
+            user-select: none;
+        }
+
+        .gallery-grid figcaption {
+            font-size: 13px;
+            color: #3c3c3c;
+            text-align: center;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+        }
+
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.75);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 200;
+        }
+
+        .lightbox img {
+            max-width: 90vw;
+            max-height: 80vh;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            -webkit-user-drag: none;
+            user-select: none;
+        }
+
+        .lightbox-controls {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            pointer-events: none;
+            padding: 0 18px;
+        }
+
+        .lightbox-btn {
+            pointer-events: auto;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.92);
+            color: var(--deep);
+            font-size: 22px;
+            font-weight: 700;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .lightbox-btn:hover {
+            transform: scale(1.05);
+            background: white;
+        }
+
+        .lightbox-zoom {
+            position: absolute;
+            bottom: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            pointer-events: auto;
+        }
+
+        .lightbox-img-wrap {
+            max-width: 90vw;
+            max-height: 80vh;
+            display: grid;
+            place-items: center;
+            position: relative;
+        }
+
+        .lightbox-img-wrap img {
+            transition: transform 0.2s ease;
+        }
+
+        .lightbox-watermark {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.28);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: clamp(16px, 2.4vw, 26px);
+            pointer-events: none;
+            mix-blend-mode: screen;
+            text-align: center;
+            transform: rotate(-12deg);
+        }
+
+        .lightbox.show {
+            display: flex;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: 18px;
+            padding: 18px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-card input,
+        .contact-card textarea {
+            width: 100%;
+            padding: 10px 12px;
+            margin-top: 8px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            font-family: inherit;
+        }
+
+        .contact-card textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .map-frame {
+            width: 100%;
+            height: 260px;
+            border: 0;
+            border-radius: 12px;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #20163a, #352056);
+            color: white;
+            padding: 28px 0;
+            margin-top: 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+        }
+
+        .copyright {
+            margin-top: 18px;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+        }
+
+        .marquee {
+            background: linear-gradient(90deg, #2b1f4a, #3a2a6a);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .floating {
+            position: fixed;
+            right: 18px;
+            z-index: 300;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .floating:hover {
+            transform: scale(1.08);
+        }
+
+        .whatsapp-float {
+            bottom: 18px;
+            background: #25d366;
+        }
+
+        .instagram-float {
+            bottom: 86px;
+            background: #e4405f;
+        }
+
+        .facebook-float {
+            bottom: 154px;
+            background: #1877f2;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 222px;
+            right: 18px;
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: var(--deep);
+            color: white;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            z-index: 300;
+        }
+
+        .back-to-top.show {
+            display: flex;
+        }
+
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .brand h1 {
+                font-size: 16px;
+            }
+
+            nav {
+                overflow-x: auto;
+                padding-bottom: 8px;
+            }
+
+            .nav-actions {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-bar">
+            <div class="brand">
+                <img src="./assets/scti-logo.jpeg" alt="SCTI Logo">
+                <h1>Sharma Computer & Typing Institute</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#why">Why Us</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#timings">Timings</a></li>
+                    <li><a href="#director">Director</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="tel:+919801200423">Call</a>
+                <a href="https://wa.me/919801200423" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div>
+                <h2>Career‑ready Computer & Typing Skills, Right Here in Amba</h2>
+                <p>Practical classes, friendly guidance, and job‑ready learning — from basic computer courses to advanced diplomas.</p>
+                <div class="hero-cta">
+                    <button class="btn primary" onclick="window.open('https://docs.google.com/forms/d/1s8-NOYsirnbSqmzqQ8JTXLaUIEHNeHrzSl1aLfWmUxk/edit', '_blank')">Enroll Now</button>
+                    <button class="btn secondary" onclick="location.href='tel:+919801200423'">Call Now</button>
+                </div>
+                <div class="moving-text"><span>Sharma Computer and Typing Institute · Near Bus Stand, Nabinagar Road, Amba · Call: +91 9801200423</span></div>
+            </div>
+            <div class="hero-card">
+                <div class="highlight">😊 मुस्कुराइये, आप शर्मा कंप्यूटर में आ गए! 😊</div>
+                <p style="margin-top: 12px;">Admission open for new batches. Limited seats for hands‑on practice.</p>
+                <div style="margin-top: 14px;">
+                    <p><strong>Address:</strong> Near Bus Stand, Nabinagar Road, Amba</p>
+                    <p><strong>Timings:</strong> 7:00 AM – 7:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="marquee">Building Futures Together · Practical Learning · Verified Certificates · Supportive Faculty</div>
+
+    <section id="announcement">
+        <div class="container">
+            <h2 class="section-title">Announcements</h2>
+            <div class="card">
+                <h3>New Batches Open</h3>
+                <p>Admissions are open for new batches. Limited seats for hands‑on lab practice.</p>
+                <p>Call or WhatsApp for the latest batch timings and course availability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Who We Are</h3>
+                    <p>Sharma Computer and Typing Institute is a local training center focused on practical skills in computers, typing, and office productivity.</p>
+                </div>
+                <div class="card">
+                    <h3>Our Mission</h3>
+                    <p>We help students build strong basics and real‑world confidence for jobs, exams, and daily computer use.</p>
+                </div>
+                <div class="card">
+                    <h3>Our Promise</h3>
+                    <p>Personal guidance, regular practice, and supportive coaching with clear learning milestones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="container">
+            <h2 class="section-title">Our Courses</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="badge">Diploma</div>
+                    <h3>ADCA</h3>
+                    <p>Advanced Diploma in Computer Application</p>
+                    <p><strong>Duration:</strong> 12 months</p>
+                    <p><strong>Eligibility:</strong> 10th+ </p>
+                    <p><strong>Fees:</strong> Call for fees</p>
+                    <p><strong>Syllabus:</strong> Available at center</p>
+                    <button class="btn primary" onclick="window.open('https://docs.google.com/forms/d/1s8-NOYsirnbSqmzqQ8JTXLaUIEHNeHrzSl1aLfWmUxk/edit', '_blank')">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="badge">Diploma</div>
+                    <h3>DCA</h3>
+                    <p>Diploma in Computer Application</p>
+                    <p><strong>Duration:</strong> 6 months</p>
+                    <p><strong>Eligibility:</strong> 10th+ </p>
+                    <p><strong>Fees:</strong> Call for fees</p>
+                    <p><strong>Syllabus:</strong> Available at center</p>
+                    <button class="btn primary" onclick="window.open('https://docs.google.com/forms/d/1s8-NOYsirnbSqmzqQ8JTXLaUIEHNeHrzSl1aLfWmUxk/edit', '_blank')">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="badge">Programming</div>
+                    <h3>JAVA</h3>
+                    <p>Learn Java Programming</p>
+                    <p><strong>Duration:</strong> Call for duration</p>
+                    <p><strong>Eligibility:</strong> Basic computer</p>
+                    <p><strong>Fees:</strong> Call for fees</p>
+                    <p><strong>Syllabus:</strong> Available at center</p>
+                    <button class="btn primary" onclick="window.open('https://docs.google.com/forms/d/1s8-NOYsirnbSqmzqQ8JTXLaUIEHNeHrzSl1aLfWmUxk/edit', '_blank')">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="badge">Programming</div>
+                    <h3>C++</h3>
+                    <p>Learn C++ Programming</p>
+                    <p><strong>Duration:</strong> Call for duration</p>
+                    <p><strong>Eligibility:</strong> Basic computer</p>
+                    <p><strong>Fees:</strong> Call for fees</p>
+                    <p><strong>Syllabus:</strong> Available at center</p>
+                    <button class="btn primary" onclick="window.open('https://docs.google.com/forms/d/1s8-NOYsirnbSqmzqQ8JTXLaUIEHNeHrzSl1aLfWmUxk/edit', '_blank')">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="badge">Programming</div>
+                    <h3>Python</h3>
+                    <p>Learn Python Programming</p>
+                    <p><strong>Duration:</strong> Call for duration</p>
+                    <p><strong>Eligibility:</strong> Basic computer</p>
+                    <p><strong>Fees:</strong> Call for fees</p>
+                    <p><strong>Syllabus:</strong> Available at center</p>
+                    <button class="btn primary" onclick="window.open('https://docs.google.com/forms/d/1s8-NOYsirnbSqmzqQ8JTXLaUIEHNeHrzSl1aLfWmUxk/edit', '_blank')">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="badge">Web</div>
+                    <h3>HTML</h3>
+                    <p>Learn HTML Programming</p>
+                    <p><strong>Duration:</strong> 2 months</p>
+                    <p><strong>Eligibility:</strong> Beginner</p>
+                    <p><strong>Fees:</strong> Call for fees</p>
+                    <p><strong>Syllabus:</strong> Available at center</p>
+                    <button class="btn primary" onclick="window.open('https://docs.google.com/forms/d/1s8-NOYsirnbSqmzqQ8JTXLaUIEHNeHrzSl1aLfWmUxk/edit', '_blank')">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="badge">Accounting</div>
+                    <h3>Tally</h3>
+                    <p>Learn Tally</p>
+                    <p><strong>Duration:</strong> 4 months</p>
+                    <p><strong>Eligibility:</strong> Basic computer</p>
+                    <p><strong>Fees:</strong> Call for fees</p>
+                    <p><strong>Syllabus:</strong> Available at center</p>
+                    <button class="btn primary" onclick="window.open('https://docs.google.com/forms/d/1s8-NOYsirnbSqmzqQ8JTXLaUIEHNeHrzSl1aLfWmUxk/edit', '_blank')">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="why-grid">
+                <div class="card">
+                    <h3>Practical Training</h3>
+                    <p>Hands‑on practice with real tasks, not just theory.</p>
+                </div>
+                <div class="card">
+                    <h3>Affordable Fees</h3>
+                    <p>Quality learning at a reasonable cost.</p>
+                </div>
+                <div class="card">
+                    <h3>Regular Assessments</h3>
+                    <p>Monthly tests and progress tracking.</p>
+                </div>
+                <div class="card">
+                    <h3>Certificate Support</h3>
+                    <p>Course completion certificates and guidance.</p>
+                </div>
+                <div class="card">
+                    <h3>Career Guidance</h3>
+                    <p>Resume tips and interview preparation.</p>
+                </div>
+                <div class="card">
+                    <h3>Flexible Batches</h3>
+                    <p>Morning and evening batches available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities">
+        <div class="container">
+            <h2 class="section-title">Facilities</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Computer Lab</h3>
+                    <p>Well‑maintained systems for hands‑on practice during every class.</p>
+                </div>
+                <div class="card">
+                    <h3>Typing Practice</h3>
+                    <p>Daily speed and accuracy practice with guided exercises.</p>
+                </div>
+                <div class="card">
+                    <h3>Study Support</h3>
+                    <p>Notes, practice sheets, and doubt‑clearing sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timings">
+        <div class="container">
+            <h2 class="section-title">Batch Timings</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Morning Batch</h3>
+                    <p>7:00 AM – 10:00 AM</p>
+                </div>
+                <div class="card">
+                    <h3>Afternoon Batch</h3>
+                    <p>12:00 PM – 3:00 PM</p>
+                </div>
+                <div class="card">
+                    <h3>Evening Batch</h3>
+                    <p>4:00 PM – 7:00 PM</p>
+                </div>
+            </div>
+            <p style="margin-top: 12px;">Exact timings can vary by course. Call for the latest schedule.</p>
+        </div>
+    </section>
+
+    <section id="director">
+        <div class="container">
+            <h2 class="section-title">Director</h2>
+            <div class="card" style="display: grid; grid-template-columns: 140px 1fr; gap: 16px; align-items: center;">
+                <img src="./assets/director.jpeg" alt="Director Sharma Sir" loading="lazy" style="width: 140px; height: 140px; object-fit: cover; border-radius: 16px;">
+                <div>
+                    <h3>Sharma Sir</h3>
+                    <p>Founder and lead trainer with a focus on practical learning and student success.</p>
+                    <p>For guidance, counseling, or admission help, feel free to connect.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid" id="gallery-grid">
+                <figure>
+                    <img src="./assets/1.jpg" alt="Classroom 1" loading="lazy">
+                    <figcaption>Classroom Practice Session</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/2.jpg" alt="Classroom 2" loading="lazy">
+                    <figcaption>Daily Computer Class</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/3.jpg" alt="Students 1" loading="lazy">
+                    <figcaption>Student Activity</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/4.jpg" alt="Students 2" loading="lazy">
+                    <figcaption>Skill Building Session</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/5.jpg" alt="Lab 1" loading="lazy">
+                    <figcaption>Winner Student Achievement</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/6.jpg" alt="Lab 2" loading="lazy">
+                    <figcaption>Director Award Recognition</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/7.jpg" alt="Training 1" loading="lazy">
+                    <figcaption>Director Award Recognition</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/8.jpg" alt="Training 2" loading="lazy">
+                    <figcaption>Winner Student Achievement</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/9.jpg" alt="Training 3" loading="lazy">
+                    <figcaption>Director Award Recognition</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/9.jpeg" alt="Training 4" loading="lazy">
+                    <figcaption>Workshop Moment</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/10.jpeg" alt="Training 5" loading="lazy">
+                    <figcaption>Event Snapshot</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/11.jpeg" alt="Training 6" loading="lazy">
+                    <figcaption>Event Snapshot</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/12.jpeg" alt="Training 7" loading="lazy">
+                    <figcaption>Student Achievement</figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/13.jpeg" alt="Training 8" loading="lazy">
+                    <figcaption>Student Achievement</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="highlights">
+        <div class="container">
+            <h2 class="section-title">Highlights</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Practical Focus</h3>
+                    <p>Daily hands‑on tasks, real‑world projects, and speed‑accuracy practice.</p>
+                </div>
+                <div class="card">
+                    <h3>Career Support</h3>
+                    <p>Resume tips, interview prep, and regular assessments for progress.</p>
+                </div>
+                <div class="card">
+                    <h3>Trusted by Students</h3>
+                    <p>Local learners choose us for clear guidance and friendly training.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Student Reviews</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>“Typing speed aur confidence dono improve hua. Teachers supportive हैं.”</p>
+                    <strong>— Student (Typing)</strong>
+                </div>
+                <div class="testimonial">
+                    <p>“ADCA course से job interview के लिए अच्छे practical skills मिले.”</p>
+                    <strong>— Student (ADCA)</strong>
+                </div>
+                <div class="testimonial">
+                    <p>“Fee reasonable है और lab practice बहुत अच्छी है.”</p>
+                    <strong>— Student (DCA)</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title">FAQ</h2>
+            <div class="faq">
+                <details>
+                    <summary>Admission के लिए क्या documents चाहिए?</summary>
+                    <p>Photo, ID proof और last class marksheet (अगर available हो).</p>
+                </details>
+                <details>
+                    <summary>Fees और batches कैसे पता करें?</summary>
+                    <p>Call या WhatsApp पर संपर्क करें, updated fees और timings मिल जाएंगी.</p>
+                </details>
+                <details>
+                    <summary>Certificate कब मिलता है?</summary>
+                    <p>Course completion और assessment के बाद certificate दिया जाता है.</p>
+                </details>
+                <details>
+                    <summary>Beginners के लिए कौन सा course best है?</summary>
+                    <p>DCA या Basic Computer से शुरुआत कर सकते हैं.</p>
+                </details>
+                <details>
+                    <summary>Certificate की validity क्या है?</summary>
+                    <p>Course completion के बाद certificate दिया जाता है. Details के लिए center पर पूछें.</p>
+                </details>
+                <details>
+                    <summary>क्या exam या नौकरी के लिए guidance मिलती है?</summary>
+                    <p>हाँ, basics और practical skills के साथ guidance दी जाती है.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Address:</strong> Near Bus Stand, Nabinagar Road, Amba</p>
+                    <p><strong>Phone:</strong> <a href="tel:+919801200423">+91 9801200423</a> / <a href="tel:+917903554745">+91 7903554745</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:sharmacomputeramba@gmail.com">sharmacomputeramba@gmail.com</a></p>
+                    <p><strong>Timings:</strong> 7:00 AM – 7:00 PM</p>
+                    <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.2957416798276!2d84.27617927288914!3d24.627584529641187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398cf813185d354b%3A0xafe79eb00a1699d3!2sSharma%20Computer%20%26%20Typing%20Institute%2C%20Amba!5e1!3m2!1sen!2sus!4v1770370705266!5m2!1sen!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    <p style="margin-top: 10px;">
+                        <a class="btn secondary" href="https://maps.app.goo.gl/XmwYcAzpstg72y9x8" target="_blank" rel="noopener">Open in Google Maps</a>
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <h3>Inquiry Form</h3>
+                    <form id="inquiry-form">
+                        <label for="inq-name">Name</label>
+                        <input id="inq-name" type="text" placeholder="Your name" required>
+                        <label for="inq-phone">Phone</label>
+                        <input id="inq-phone" type="tel" placeholder="Your phone" required>
+                        <label for="inq-course">Course Interested In</label>
+                        <input id="inq-course" type="text" placeholder="Course name" required>
+                        <label for="inq-message">Message</label>
+                        <textarea id="inq-message" placeholder="Your message"></textarea>
+                        <button class="btn primary" type="button" onclick="sendWhatsApp('919801200423')">Send on WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h3>Sharma Computer & Typing Institute</h3>
+                <p>Practical computer & typing training for students and job seekers.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="#courses">Courses</a></p>
+                <p><a href="#gallery">Gallery</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+            <div>
+                <h3>Recognition</h3>
+                <p>Ask at the center for certification and affiliation details.</p>
+            </div>
+        </div>
+        <div class="container">
+            <p class="copyright">© <span id="copyright-year">2026</span> Sharma Computer &amp; Typing Institute. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919801200423" class="floating whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="28" height="28">
+    </a>
+
+    <a href="https://www.instagram.com/sharmasir989/" class="floating instagram-float" target="_blank" aria-label="Follow us on Instagram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="28" height="28">
+    </a>
+
+    <a href="https://www.facebook.com/share/1C9wAHoN9Z/" class="floating facebook-float" target="_blank" aria-label="Follow us on Facebook">
+        <img src="./assets/facebook.png" alt="Facebook" width="28" height="28">
+    </a>
+
+    <a href="#home" class="back-to-top" id="backToTop">↑</a>
+
+    <div class="lightbox" id="lightbox" onclick="toggleLightbox(false)">
+        <div class="lightbox-img-wrap">
+            <img id="lightbox-img" alt="Gallery preview">
+            <div class="lightbox-watermark">Sharma Computer &amp; Typing Institute</div>
+        </div>
+        <div class="lightbox-controls">
+            <button class="lightbox-btn" type="button" onclick="event.stopPropagation(); showPrev()">‹</button>
+            <button class="lightbox-btn" type="button" onclick="event.stopPropagation(); showNext()">›</button>
+        </div>
+        <div class="lightbox-zoom" onclick="event.stopPropagation()">
+            <button class="lightbox-btn" type="button" onclick="zoomOut()">−</button>
+            <button class="lightbox-btn" type="button" onclick="resetZoom()">⟲</button>
+            <button class="lightbox-btn" type="button" onclick="zoomIn()">+</button>
+        </div>
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const galleryImages = Array.from(document.querySelectorAll('#gallery-grid img'));
+        const backToTop = document.getElementById('backToTop');
+        let currentIndex = 0;
+        let zoomLevel = 1;
+
+        function toggleLightbox(show, src = '') {
+            if (show) {
+                lightboxImg.src = src;
+                resetZoom();
+                lightbox.classList.add('show');
+            } else {
+                lightbox.classList.remove('show');
+                lightboxImg.src = '';
+                resetZoom();
+            }
+        }
+
+        function showAt(index) {
+            if (!galleryImages.length) return;
+            currentIndex = (index + galleryImages.length) % galleryImages.length;
+            lightboxImg.src = galleryImages[currentIndex].src;
+            resetZoom();
+        }
+
+        function showNext() {
+            showAt(currentIndex + 1);
+        }
+
+        function showPrev() {
+            showAt(currentIndex - 1);
+        }
+
+        function applyZoom() {
+            lightboxImg.style.transform = `scale(${zoomLevel})`;
+        }
+
+        function zoomIn() {
+            zoomLevel = Math.min(3, zoomLevel + 0.2);
+            applyZoom();
+        }
+
+        function zoomOut() {
+            zoomLevel = Math.max(1, zoomLevel - 0.2);
+            applyZoom();
+        }
+
+        function resetZoom() {
+            zoomLevel = 1;
+            applyZoom();
+        }
+
+        galleryImages.forEach((img, idx) => {
+            img.addEventListener('click', () => {
+                currentIndex = idx;
+                toggleLightbox(true, img.src);
+            });
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('show')) return;
+            if (e.key === 'Escape') toggleLightbox(false);
+            if (e.key === 'ArrowRight') showNext();
+            if (e.key === 'ArrowLeft') showPrev();
+            if (e.key === '+') zoomIn();
+            if (e.key === '-') zoomOut();
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        function sendWhatsApp(number) {
+            const name = document.getElementById('inq-name').value.trim();
+            const phone = document.getElementById('inq-phone').value.trim();
+            const course = document.getElementById('inq-course').value.trim();
+            const message = document.getElementById('inq-message').value.trim();
+
+            if (!name || !phone || !course) {
+                alert('Please fill in Name, Phone, and Course.');
+                return;
+            }
+
+            const body = encodeURIComponent(
+                `New Inquiry from Website\nName: ${name}\nPhone: ${phone}\nCourse: ${course}\nMessage: ${message}`
+            );
+
+            window.open(`https://wa.me/${number}?text=${body}`, '_blank');
+        }
+
+        document.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+        });
+
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('dragstart', (e) => e.preventDefault());
+        });
+
+        const yearEl = document.getElementById('copyright-year');
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>
